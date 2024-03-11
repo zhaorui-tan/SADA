@@ -1,0 +1,161 @@
+txt_r1, 49.8800
+txt_r5, 74.9600
+txt_r10, 83.2800
+txt_r20, 89.5800
+txt_r_mean, 69.3733
+img_r1, 30.4000
+img_r5, 54.7360
+img_r10, 66.1320
+img_r20, 76.9640
+img_r_mean, 50.4227
+r_mean, 59.8980
+raw
+
+
+
+
+
+
+118287
+64,000
+
+# ita 128 50
+
+txt_r1, 59.0800
+txt_r5, 81.9200
+txt_r10, 89.0200
+txt_r20, 93.9200
+txt_r_mean, 76.6733
+img_r1, 40.6840
+img_r5, 67.6720
+img_r10, 77.9360
+img_r20, 86.7400
+img_r_mean, 62.0973
+r_mean, 69.3853
+
+=1e-7
+txt_r1, 58.5800
+txt_r5, 82.4400
+txt_r10, 89.2800
+txt_r20, 93.8200
+txt_r_mean, 76.7667
+img_r1, 41.0760
+img_r5, 68.3400
+img_r10, 78.4520
+img_r20, 87.0440
+img_r_mean, 62.6227
+r_mean, 69.6947
+
+
+
+
+# ori 128 50
+
+txt_r1, 59.0400
+txt_r5, 81.4600
+txt_r10, 89.2000
+txt_r20, 94.1200
+txt_r_mean, 76.5667
+img_r1, 40.4720
+img_r5, 67.5520
+img_r10, 78.1360
+img_r20, 86.7040
+img_r_mean, 62.0533
+r_mean, 69.3100
+ =1e-7
+txt_r1, 57.9200
+txt_r5, 81.6800
+txt_r10, 88.5600
+txt_r20, 93.9600
+txt_r_mean, 76.0533
+img_r1, 40.7640
+img_r5, 67.7440
+img_r10, 78.2560
+img_r20, 86.6160
+img_r_mean, 62.2547
+r_mean, 69.1540
+
+
+
+# ita 128 10 1e-06
+
+txt_r1, 56.6000
+txt_r5, 80.1400
+txt_r10, 87.9800
+txt_r20, 93.2400
+txt_r_mean, 74.9067
+img_r1, 38.8440
+img_r5, 65.1000
+img_r10, 75.6440
+img_r20, 84.8600
+img_r_mean, 59.8627
+r_mean, 67.3847
+
+aug = SemanticAugCal(cov_dir, 512, 0.003).cuda()
+parser.add_argument("--lr", type=float, default=5e-6, help="Learning rate")
+txt_r1, 54.7200
+txt_r5, 78.8000
+txt_r10, 86.3000
+txt_r20, 92.1400
+txt_r_mean, 73.2733
+img_r1, 35.0840
+img_r5, 60.9360
+img_r10, 71.9800
+img_r20, 81.6840
+img_r_mean, 56.0000
+r_mean, 64.6367
+
+txt_r1, 52.7400
+txt_r5, 76.8400
+txt_r10, 85.3400
+txt_r20, 91.4200
+txt_r_mean, 71.6400
+img_r1, 37.2760
+img_r5, 63.7360
+img_r10, 74.2000
+img_r20, 83.9400
+img_r_mean, 58.4040
+r_mean, 65.0220
+
+
+
+# ori 128 10 1e-06
+
+txt_r1, 56.3400
+txt_r5, 80.1200
+txt_r10, 87.4200
+txt_r20, 93.3000
+txt_r_mean, 74.6267
+img_r1, 38.1760
+img_r5, 64.4080
+img_r10, 75.1480
+img_r20, 84.5200
+img_r_mean, 59.2440
+r_mean, 66.9353
+
+aug = SemanticAugCal(cov_dir, 512, 0.003).cuda()
+parser.add_argument("--lr", type=float, default=5e-6, help="Learning rate")
+txt_r1, 53.8600
+txt_r5, 77.9200
+txt_r10, 85.4200
+txt_r20, 91.5200
+txt_r_mean, 72.4000
+img_r1, 35.0920
+img_r5, 60.9680
+img_r10, 72.1600
+img_r20, 82.0440
+img_r_mean, 56.0733
+r_mean, 64.2367
+
+
+txt_r1, 50.9000
+txt_r5, 76.2200
+txt_r10, 83.7000
+txt_r20, 90.4000
+txt_r_mean, 70.2733
+img_r1, 36.0200
+img_r5, 62.5400
+img_r10, 73.3240
+img_r20, 82.8000
+img_r_mean, 57.2947
+r_mean, 63.7840

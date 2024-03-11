@@ -1,0 +1,40 @@
+CONFIG_NAME: coco
+
+dataset_name: coco
+data_dir: /data1/phd21_zhaorui_tan/data_raw/np/coco
+
+gpu_id: 0
+imsize: 256
+z_dim: 100
+cond_dim: 512
+manual_seed: 100
+cuda: True
+
+stamp: 'normal'
+state_epoch: 0
+max_epoch: 351
+batch_size: 64 #32
+nf: 32
+ch_size: 3
+
+model: base
+
+gen_interval: 1
+test_interval: 2
+save_interval: 2
+
+truncation: True
+trunc_rate: 0.88
+
+sample_times: 1
+
+save_image: False
+val_save_dir: ./vals/coco/
+
+
+TEXT:
+    USE_CLIP: True
+    WORDS_NUM: 77
+    EMBEDDING_DIM: 512
+    CAPTIONS_PER_IMAGE: 5
+
