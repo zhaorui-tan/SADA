@@ -1,9 +1,9 @@
-# Semantic-Aware Data Augmentation for Text-to-Image Synthesis (AAAI24)
+# Semantic-Aware Data Augmentation for Text-to-Image Synthesis, Accepted by aaai24
 Zhaorui Tan, Xi Yang, Kaizhu Huang 
 
 The paper is now available here!!!
 arxiv link: https://arxiv.org/abs/2312.07951 
-Our proofs are also included in this repo, please enjoy it 
+Our proofs are also included in this repo. Please enjoy it 
 
 
 Using SADA is quite easy. The key is to get those conditional covariances, other steps are very simple.
