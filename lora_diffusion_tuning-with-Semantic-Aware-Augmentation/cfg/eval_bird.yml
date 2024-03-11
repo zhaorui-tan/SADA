@@ -1,0 +1,42 @@
+CONFIG_NAME: 'attn2'
+
+DATASET_NAME: 'birds'
+DATA_DIR: '/data1/phd21_zhaorui_tan/data_raw/birds'
+GPU_ID: 3
+WORKERS: 1
+
+B_VALIDATION: True  # True  # False
+TREE:
+    BRANCH_NUM: 3
+
+
+TRAIN:
+    FLAG: False
+#    NET_G: '../models/bird_AttnGAN2.pth'
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output_r/birds_attn2_2022_12_11_15_15_49_R_lr_no_change/Model/netG_epoch_600.pth'
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/birds_aug_p1p1_20w200/Model/netG_epoch_184.pth'
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/birds_attn2_p0_01_p0_01_600/Model/netG_epoch_580.pth'
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/birds_attn2_p_0_01_p0_01_noise_mean_0/Model/netG_epoch_590.pth'
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/birds_attn2_2022_09_24_18_48_09/Model/netG_epoch_530.pth'
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/birds_attn2_2022_10_18_00_57_57/Model/netG_epoch_580.pth'
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/birds_attn2_2022_10_18_00_57_57/Model/netG_epoch_600.pth'
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/birds_attn2_2022_12_15_13_19_59_itac_retrain/Model/netG_epoch_590.pth'
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/birds_attn2_2022_12_17_10_25_46/Model/netG_epoch_590.pth'
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/birds_attn2_2023_01_19_21_34_35/Model/netG_epoch_550.pth'
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/birds_attn2_2023_02_01_14_57_18/Model/netG_epoch_600.pth'
+    NET_G: '/data1/phd21_zhaorui_tan/SADA/AttnGAN/output/birds_attn2_2023_03_16_17_57_32/Model/netG_epoch_600.pth'
+    B_NET_D: False
+    BATCH_SIZE: 50
+    NET_E: '/data1/phd21_zhaorui_tan/DAMSMencoders/bird/text_encoder200.pth'
+
+
+GAN:
+    DF_DIM: 64
+    GF_DIM: 32
+    Z_DIM: 100
+    R_NUM: 2
+
+TEXT:
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 10
+#    WORDS_NUM: 25 #25

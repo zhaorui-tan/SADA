@@ -1,0 +1,38 @@
+CONFIG_NAME: 'attn2'
+
+DATASET_NAME: 'coco'
+DATA_DIR: '/Data_PHD/phd22_zhaorui_tan/data_raw/coco'
+GPU_ID: 3
+WORKERS: 1
+
+B_VALIDATION: True
+TREE:
+    BRANCH_NUM: 3
+
+
+TRAIN:
+    FLAG: False
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/coco_attn2_2022_10_23_15_31_23/Model/netG_epoch_30.pth'
+#    NET_G: '../models/coco_AttnGAN2.pth'
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/coco_attn2_2022_11_06_21_06_43/Model/netG_epoch_30.pth'
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/coco_attn2_2022_11_07_23_53_36/Model/netG_epoch_30.pth'
+#    NET_G: '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/coco_attn2_2022_11_09_21_12_37/Model/netG_epoch_14.pth'
+#    NET_G : '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output_r/coco_attn2_2022_12_12_13_45_38/Model/netG_epoch_30.pth'
+#    NET_G : '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/coco_attn2_2023_01_18_19_00_44_0_1pl/Model/netG_epoch_2.pth'
+#    NET_G : '/data1/phd21_zhaorui_tan/other_models/AttnGAN-master/AttnGAN-master/output/coco_attn2_2023_01_20_00_52_00/Model/netG_epoch_1.pth'
+    NET_G : '/data1/phd21_zhaorui_tan/SADA/AttnGAN/output/coco_attn2_2023_03_18_15_24_56/Model/netG_epoch_2.pth'
+    B_NET_D: False
+    BATCH_SIZE: 50
+    NET_E: '/Data_PHD/phd22_zhaorui_tan/DAMSMencoders/coco/text_encoder100.pth'
+
+
+GAN:
+    DF_DIM: 96
+    GF_DIM: 48
+    Z_DIM: 100
+    R_NUM: 3
+
+TEXT:
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 5
+    WORDS_NUM: 12
