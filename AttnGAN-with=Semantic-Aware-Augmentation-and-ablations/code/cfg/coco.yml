@@ -1,0 +1,31 @@
+CONFIG_NAME: 'coco'
+
+DATASET_NAME: 'coco'
+DATA_DIR: '/data1/phd21_zhaorui_tan/data_raw/coco'
+GPU_ID: 0
+WORKERS: 1
+#MAX_ATTR_NUM: 5
+#MAX_ATTR_LEN: 5
+WARM_UP: 5
+
+B_VALIDATION: False # True  # False
+loss: 'hinge'
+C: '../cov/clip/coco/'
+
+TREE:
+  BRANCH_NUM: 1
+  BASE_SIZE: 256
+
+
+TRAIN:
+  NF: 64 # default 64
+  BATCH_SIZE: 32
+  MAX_EPOCH: 301
+  #  NET_G: '/data1/phd21_zhaorui_tan/DF-GAN-ffc-18/output/coco_coco_2022_06_03_01_11_41/models/coco/netG_094.pth'
+  NET_G: '/data1/phd21_zhaorui_tan/DF-GAN-ffc-21/output/coco_2D_1/models/coco/netG_060.pth'
+#  NET_G: ''0
+
+TEXT:
+  EMBEDDING_DIM: 256
+  CAPTIONS_PER_IMAGE: 5
+  DAMSM_NAME: '/data1/phd21_zhaorui_tan/DAMSMencoders/coco/text_encoder100.pth'
